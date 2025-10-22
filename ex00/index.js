@@ -1,11 +1,20 @@
 // SCORE AND RESTART
 
-let btn = document.getElementById("restart-btn");
-btn.addEventListener("click", restartScore && startGame);
+const btn = document.getElementById("restart-btn");
+const overlayBtn = document.getElementById("restart-btn-overlay");
+const overlay = document.getElementById("game-over");
+
+btn.addEventListener("click", restartGame);
+overlayBtn.addEventListener("click", restartGame);
 
 function restartScore() {
-	let score = parseInt(document.getElementById("score").innerHTML);
 	document.getElementById("score").innerHTML = 0;
+}
+
+function restartGame() {
+	restartScore();
+	overlay.style.display = "none";
+	startGame();
 }
 
 function incrementScore(value) {
@@ -208,9 +217,7 @@ function canMove() {
 }
 
 function gameOver() {
-	alert("PERDISTE");
-	restartScore();
-	// startGame();
+	overlay.style.display = "flex";
 }
 
 function generateNumber() {
