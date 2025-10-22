@@ -92,8 +92,8 @@ function moveUp() {
 			matrix[y][x] = newCol[y];			
 		}
 	}
-	updateGrid();
 	if (matrixCompare(matrixCopy, matrix) == true) addRandomTile();
+	updateGrid();
 	if (canMove() == false) {
 		gameOver();
 	}
@@ -111,8 +111,8 @@ function moveDown() {
 			matrix[y][x] = newCol[y];			
 		}
 	}
-	updateGrid();
 	if (matrixCompare(matrixCopy, matrix) == true) addRandomTile();
+	updateGrid();
 	if (canMove() == false) {
 		gameOver();
 	}
@@ -129,8 +129,8 @@ function moveLeft() {
 			matrix[y][x] = newCol[x];			
 		}
 	}
-	updateGrid();
 	if (matrixCompare(matrixCopy, matrix) == true) addRandomTile();
+	updateGrid();
 	if (canMove() == false) {
 		gameOver();
 	}
@@ -147,8 +147,8 @@ function moveRight() {
 			matrix[y][x] = newCol[x];			
 		}
 	}
-	updateGrid();
 	if (matrixCompare(matrixCopy, matrix) == true) addRandomTile();
+	updateGrid();
 	if (canMove() == false) {
 		gameOver();
 	}
