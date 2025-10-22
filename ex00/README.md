@@ -7,6 +7,8 @@ The goal is to combine tiles until you reach the **2048 tile**.
 
 ## 🕹️ How to Play
 
+- Clone the repository.
+- Open the index.html file.
 - Use the **arrow keys** to move the tiles.  
 - When two tiles with the same number touch, they **merge**.  
 - Try to reach the **2048 tile** to win.  
